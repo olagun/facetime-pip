@@ -1,6 +1,7 @@
 const clamp = (a, b, t) => Math.max(a, Math.min(b, t));
 const lerp = (a, b, t) => (1 - t) * a + b * t;
 const mapRange = ([a, b], [c, d], t) => ((d - c) / (b - a)) * (t - a) + c;
+
 const mapNRange = (a, b, t) => {
   let index = 0;
 
