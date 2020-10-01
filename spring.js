@@ -2,6 +2,7 @@ import { clamp, lerp } from "./utils.js";
 
 function spring({
   value: initialValue = 0,
+  velocity: initialVelocity = 0,
   strength: k = 0.05,
   damping: b = 0.4,
 }) {
@@ -13,7 +14,7 @@ function spring({
   let value = initialValue;
   let prevValue = initialValue;
 
-  let velocity = 0;
+  let velocity = initialVelocity;
 
   let target = initialValue;
 
@@ -28,8 +29,6 @@ function spring({
 
     prevValue = value;
     value += velocity;
-
-    
   }
 
   requestAnimationFrame(tick);

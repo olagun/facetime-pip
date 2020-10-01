@@ -24,15 +24,17 @@
         height: 100vh;
         overflow: hidden;
         display: grid;
-        place-content: center;
+        align-items: center;
+        justify-content: start;
+        /* padding-left: 100px; */
         background-color: #ddd;
         cursor: grab;
       }
 
       .image {
-
         display: flex;
         will-change: transform;
+        position: relative;
       }
 
       .tint {
@@ -44,16 +46,22 @@
         background-color: black;
       }
 
-      .image img {
-        width: 400px;
+      .card {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 400px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border-radius: 8px;
+        padding: 24px;
+        font-family: "Untitled Sans";
+        box-sizing: border-box;
       }
     </style>
 
-    <div class="image">
-      <img src="image.jpg" />
-      <img src="image.jpg" />
-      <img src="image.jpg" />
-    </div>
+    <div class="card">Card 1</div>
 
     <script src="index.js" type="module"></script>
   </body>

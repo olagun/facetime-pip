@@ -29,4 +29,8 @@ function getIndex(value, indexWidth) {
   return Math.round(Math.round(value / indexWidth));
 }
 
-export { clamp, mapNRange, mapRange, lerp, round, getIndex, array };
+function dist([x1, y1], [x2, y2]) {
+  return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+}
+
+export { clamp, mapNRange, mapRange, lerp, round, getIndex, array, dist };

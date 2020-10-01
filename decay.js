@@ -4,8 +4,8 @@ function decay({ value = 0, decay = 0.95, velocity = 0 }) {
   function tick() {
     requestAnimationFrame(tick);
 
-    value = value + velocity;
     velocity = velocity * decay;
+    value = value + velocity;
   }
 
   requestAnimationFrame(tick);
