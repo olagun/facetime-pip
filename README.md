@@ -6,6 +6,12 @@ Lately I've been trying to get more into animation on the web. The way that I've
 
 I'm also writing my own [guide](https://www.notion.so/olagun/Physically-Based-Animations-in-JavaScript-9431d7bb060848948c761706d47d205c) on how to create natural animations with JavaScript. Stay tuned! 
 
+## Getting Started
+1. `git clone https://github.com/olagun/facetime-pip.git`
+2. `cd facetime-pip`
+3. `npm i -g budo`
+4. `budo`
+
 ## Resources
 
 - [Designing Fluid Interfaces](https://developer.apple.com/videos/play/wwdc2018/803/)
